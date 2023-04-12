@@ -12,13 +12,14 @@ class ZEFOY:
     def __init__(self):
         self.options = Options()
         self.driver = None
-        self.video = None
+        self.video = input("(?) VIDEOID  ")
         self.works = []
         self.false = []
 
     def setup(self):
         global driver
         self.options.add_argument("--headless")
+        self.video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + video
         self.options.add_argument("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36")
         driver = webdriver.Chrome(
             executable_path=ChromeDriverManager().install(),
@@ -102,8 +103,6 @@ class ZEFOY:
                 sec = sec.split(" seconds")[0]
                 print("(+) TIMER " + min + " Minutes " + sec + " Seconds")
                 time.sleep(int(min)*60+int(sec)) # Timer calculation
-    self.video = input("(?) VIDEOID  ")
-    self.video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + video
 zefoy = ZEFOY()
 zefoy.setup()
 zefoy.start()
