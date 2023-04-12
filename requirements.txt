@@ -1,7 +1,5 @@
 requests
 selenium
-time
-random
 pillow
 io
 webdriver_manager
