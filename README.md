@@ -27,13 +27,13 @@
 # Q&A
 #### Q: Why there aren't UI?
 #### A: Im on mac, mac can't test windows ui, will update when Im back from journey
-
+#
 #### Q: Why you didn't release source code as you encrypted it?
 #### A: I release source code when I got amount of stars and I don't want my project to be resold and skidded and why should I open source it, Im being nice
-
+#
 #### Q: I decrypted your script, and its very messy and not well structured, so ?
 #### A: What do you expect a project which I make for 6 minutes and release it?
-
+#
 #### Q: Why theres always error saying no modules called this and that?
 #### A: Go to instruction and follow the order and install all the requirements
 
