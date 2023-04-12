@@ -32,7 +32,7 @@
 #### A: I release source code when I got amount of stars and I don't want my project to be resold and skidded and why should I open source it, Im being nice
 #
 #### Q: I decrypted your script, and its very messy and not well structured, so ?
-#### A: What do you expect a project which I make for 6 minutes and release it?
+#### A: What do you expect a project which I make for 6 minutes and release it and for free?
 #
 #### Q: Why theres always error saying no modules called this and that?
 #### A: Go to instruction and follow the order and install all the requirements
