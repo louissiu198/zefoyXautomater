@@ -5,7 +5,7 @@
 # Introduction
 ### Options : Headless/Browser
 ### Service : Views, Shares, Favourites, Live Streams, Follows, Hearts 
-#### Notes : Not every service works as zefoy has the control on closing the service and the time (Such as follow and likes has a 30 min timer)
+### Notes : Not every service works as zefoy has the control on closing the service and the time (Such as follow and likes has a 30 min timer)
 
 # Release 
 ### 10 Stars | Release Zefoy Automater (Without auto-capsolver)
