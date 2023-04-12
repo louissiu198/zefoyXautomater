@@ -19,7 +19,7 @@ class ZEFOY:
     def setup(self):
         global driver
         self.options.add_argument("--headless")
-        self.video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + video
+        self.video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + self.video
         self.options.add_argument("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36")
         driver = webdriver.Chrome(
             executable_path=ChromeDriverManager().install(),
