@@ -73,7 +73,7 @@ class ZEFOY:
         while True:
             driver.get("https://zefoy.com")
             WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div/div[2]/div/div/div[5]/div/button'))).click()
-            WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[10]/div/form/div/input'))).send_keys(video)
+            WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[10]/div/form/div/input'))).send_keys(self.video)
             WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[10]/div/form/div/div/button'))).click()
             """
             driver.find_element(By.XPATH, "/html/body/div[6]/div/div[2]/div/div/div[5]/div/button").click()
