@@ -102,8 +102,8 @@ class ZEFOY:
                 sec = sec.split(" seconds")[0]
                 print("(+) TIMER " + min + " Minutes " + sec + " Seconds")
                 time.sleep(int(min)*60+int(sec)) # Timer calculation
-    video = input("(?) VIDEOID  ")
-    video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + video
+    self.video = input("(?) VIDEOID  ")
+    self.video = f"https://www.tiktok.com/@{random.randint(10000,99999)}user{random.randint(10000,99999)}/video/" + video
 zefoy = ZEFOY()
 zefoy.setup()
 zefoy.start()
