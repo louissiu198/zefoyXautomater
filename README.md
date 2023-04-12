@@ -1,4 +1,11 @@
 # ZEFOY
+```
+pip install -r requirements.txt
+create. a image called "image.png"
+enjoy
+```
+
+
 ## TikTok Multi-Service (Provided by zefoy.com with automater and captcha solver)
 ## Star this repo for my motivation (Per month at least 20 stars or I stop hosting bots and updates)
 
