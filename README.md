@@ -1,15 +1,15 @@
-# ZEFOY
-## TikTok Multi-Service (Provided by zefoy.com with my automater and captcha solver)
-## Star this repo for my motivation (Per month at least 20 stars or I stop hosting bots and updates)
+# ZEFOY V2
+## TikTok Views (Provided by zefoy.com, mytoolstown.com, etc)
+## 20 Stars for multi website views (3k per 2 min)
 ### Contributes: Thank you, phish for the ocr solver api bypass, UnknownXd for providing video tutorial, makmak for beggin me to release
 
 # Instruction
 ### 1. Download The Zipfile from github
 ### 2. Extract it
-### 3. type cmd on the directery and enter it
-### 4. type pip install -r requirements.txt
-### 5. type python main.py
-### 6. enjoy, wait until it loads, if there's error please post on issue. if success, just afk until the browser closes, estimated time: 2 hours
+### 3. Type "python main.py" on cmd
+### 4. Script auto installs the modules (No need to worry) 
+### 5. Enjoy running it, if it prints errors, please open an issue and join discord server for fixes
+
 
 # Preview
 
