@@ -1,6 +1,6 @@
 # ZEFOY V2
-## TikTok Views (Provided by zefoy.com, mytoolstown.com, etc)
-## 20 Stars for multi website views (3k per 2 min)
+## TikTok Views (Provided by zefoy.com)
+## 20 Stars for Android + Windows Zefoy Version (which u can run in android phone, apple phone can open replit and host it there)
 ### Contributes: Thank you, phish for the ocr solver api bypass, UnknownXd for providing video tutorial, makmak for beggin me to release
 
 # Instruction
