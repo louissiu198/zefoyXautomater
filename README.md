@@ -1,5 +1,9 @@
-# Zefoy V3 (25 Stars Release)
+# Zefoy V1
+# V3 (25 Stars Release)
 # Light Weighted, Bugless
 
-# Newest version with Non-browser and working in phone was not release anymore, which was Zefoy V4 which can run on free servers 24/7
-# DM to buy louissiu1998#0503
+# pip install -r requirements.txt 
+# python main.py
+# reason i turned it back to v1, is to recreate as zefoy's changing xpaths and they are not dumb 
+# Now this version has lots of bugs but the only one was working in the whole github
+# Support me by donate money 
