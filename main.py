@@ -1,17 +1,4 @@
-import threading
-import requests
-import selenium
-import random
-import time
-import os
-from PIL import Image
-from io import BytesIO
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support import expected_conditions as EC
+
 
 PATHS = {
     "captchaImage":"/html/body/div[5]/div[2]/form/div/div/img",
@@ -45,7 +32,7 @@ class ZEFOY:
         self.options.add_experimental_option("excludeSwitches", ["enable-logging"])
         self.driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=self.options)
         os.system("clear")
-        print(ICONS)
+        self.prank("9")
         self.driver.get("https://zefoy.com")
         self.solve()
 
@@ -56,20 +43,21 @@ class ZEFOY:
         sec = sec.split(" seconds")[0]
         return min, sec
     
-    def print(choice, bar1=None, bar2=None):
+    def prank(self, choice, bar1=None, bar2=None):
         if choice == "1":
-            print(f"[ZEFOY] (-) Captcha Incorrect")
+            print(Colorate.Horizontal(Colors.yellow_to_red,f"[ZEFOY] (-) Captcha Incorrect"))
         elif choice == "2":
-            print(f"[ZEFOY] (+) Captcha Correct")
+            print(Colorate.Horizontal(Colors.yellow_to_red,f"[ZEFOY] (+) Captcha Correct"))
         elif choice == "3":
-            print(f"[ZEFOY] (!) Captcha Solved [{bar1}]")
+            print(Colorate.Horizontal(Colors.yellow_to_red,f"[ZEFOY] (!) Captcha Solved | {bar1}"))
         elif choice == "4":
-            print("[ZEFOY] (+) Views Working")
+            print(Colorate.Horizontal(Colors.yellow_to_red,"[ZEFOY] (+) Views Working"))
         elif choice == "5":
-            print("[ZEFOY] (+) Views Broken")
+            print(Colorate.Horizontal(Colors.yellow_to_red,"[ZEFOY] (+) Views Broken"))
         elif choice == "6":
-            print(f"[ZEFOY] (-) Timeout {bar1} Minutes {bar2} Seconds")
-
+            print(Colorate.Horizontal(Colors.yellow_to_red,f"[ZEFOY] (-) Timeout | {bar1} Minutes {bar2} Seconds"))
+        elif choice == "9":
+            print(Colorate.Horizontal(Colors.yellow_to_red,ICONS))
     def ocrpm(self, image):        
         response = requests.post(
             url="https://api.api-ninjas.com/v1/imagetotext",
@@ -79,9 +67,13 @@ class ZEFOY:
                 "Referer": "https://api-ninjas.com/"
             }
         )
-        response = list(response.json())
-        response = dict(response[0])
-        return response["text"]
+        try:
+            response = list(response.json())
+            response = dict(response[0])
+            return response["text"]
+        except:
+            self.ocrpm(image)
+    # Try Except Prevent Exceptions as json to list to dict
            
     def solve(self):
         while True:
@@ -90,53 +82,77 @@ class ZEFOY:
             with open("image.png", "rb") as image:
                 image = image.read()
             captcha = self.ocrpm(bytearray(image))
-            print("(!) Solved " + captcha)
+            self.prank("3", captcha)
             self.captcha = captcha
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, PATHS['captchaInput']))).send_keys(captcha.lower())
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, PATHS['captchaButton']))).click()
             try:
                 WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS["captchaCheck"])))
-                print("(-) Captcha Incorrect")
+                self.prank("1")
                 self.driver.refresh()
             except:
-                print("(+) Captcha Passed")
+                self.prank("2")
                 break
                
     def start(self):
         try:
             WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsButton']))).click()
-            print("(+) VIEWS WORKING")
+            self.prank("4")
         except:
-            print("(-) VIEWS BROKEN")
+            self.prank("5")
             exit()
         os.system('clear')
-        print(ICONS)
+        self.prank("9")
         while True:
             self.driver.get("https://zefoy.com")
-            WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsButton']))).click()
-            WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsInput']))).send_keys(self.itemid)
-            WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsEnter']))).click()
             try:
-                time.sleep(3)
-                min, sec = self.sleep(self.driver.find_element(By.XPATH, PATHS["viewsTimer"]).text)
-                print("(-) [ZEFOY] Timeout | " + min + " Minutes " + sec + " Seconds")
-                self.timer = int(min)*60+int(sec)
-                time.sleep(self.timer+1)
-            except Exception as e:
-                counts = WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.XPATH, PATHS["viewsConfirm"]))).text
-                print(f"(*) [ZEFOY] Count {counts}")
-                WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.XPATH, PATHS["viewsConfirm"]))).click()
-                print("(+) [ZEFOY] Sent")
-                time.sleep(5)
-                min, sec = self.sleep(self.driver.find_element(By.XPATH, PATHS["viewsTimer"]).text)
-                print("(+) TIMER " + min + " Minutes " + sec + " Seconds")
-                self.timer = int(min)*60+int(sec)
-                time.sleep(self.timer+1) 
-        self.driver.refresh()
-        self.solve()
+                self.driver.find_element(By.XPATH, PATHS["captchaImage"])
+                self.driver.refresh()
+                self.solve()
+            except:
+                WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsButton']))).click()
+                WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsInput']))).send_keys(self.itemid)
+                WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.XPATH, PATHS['viewsEnter']))).click()
+                try:
+                    time.sleep(3)
+                    min, sec = self.sleep(self.driver.find_element(By.XPATH, PATHS["viewsTimer"]).text)
+                    self.prank("6", min, sec)
+                    self.timer = int(min)*60+int(sec)
+                    time.sleep(self.timer+1)
+                except Exception as e:
+                    try:
+                        counts = WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.XPATH, PATHS["viewsConfirm"]))).text
+                        print(Colorate.Horizontal(Colors.yellow_to_red,f"(*) [ZEFOY] Count {counts}"))
+                        WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.XPATH, PATHS["viewsConfirm"]))).click()
+                        print(Colorate.Horizontal(Colors.yellow_to_red,"(+) [ZEFOY] Sent"))
+                        time.sleep(5)
+                        min, sec = self.sleep(self.driver.find_element(By.XPATH, PATHS["viewsTimer"]).text)
+                        self.prank("6", min, sec)
+                        self.timer = int(min)*60+int(sec)
+                        time.sleep(self.timer+1) 
+                    except:
+                        self.driver.refresh()
+                        self.solve()
+        # First Loop, then try except to prevent captcha appear after 5-6 refresh, then next try except about the first timer and session expired
 
-#os.system(f'title [ZEFOY] (Views): {client.views} | (Captcha): {client.captcha} | (Timer): {client.timer} Seconds | (Aurthor): louissiu1998#0503 | (Discord): discord.gg/N2p62eRWam (Github): github.com/louissiu1998')
 client = ZEFOY()
 client.setup()
 client.start()
+
+import threading
+import requests
+import selenium
+import random
+import time
+import os
+from PIL import Image
+from io import BytesIO
+from selenium import webdriver
+from pystyle import Colorate, Colors, Write
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support import expected_conditions as EC
+
 
