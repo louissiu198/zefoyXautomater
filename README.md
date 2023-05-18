@@ -1,15 +1,6 @@
-# Zefoy V1
-# V3 (25 Stars Release)
-# Light Weighted, Bugless
+# Zefoy V3 (Exception prevent: redo captcha after session expired)
+# V4 30 Stars (REQUESTS BASED)
 
-# Reason It went to v1
-```
-pip install -r requirements.txt 
-python main.py
-reason i turned it back to v1, is to recreate as zefoy's changing xpaths and they are not dumb 
-Now this version has lots of bugs but the only one was working in the whole github
-Support me by donate money 
-```
+https://discord.gg/3uDhjyRgSw
 
-# Common bugs
-### It will auto went down after 3 sent
+# Love U skids, dumbass, idians
