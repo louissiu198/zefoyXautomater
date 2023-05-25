@@ -11,7 +11,7 @@ tf kid you know what
 i can do hashlib md5, wanna try or no dumbas fucking bitch
 https://media.discordapp.net/attachments/1103610222263668837/1111432713224855582/image.png?width=1288&height=914
 ### Video explain to v4
-https://discord.com/channels/1100751007878754374/1103610222263668837/1111432212051677237
+<img width="1070" alt="Screenshot 2023-05-26 at 7 27 37 AM" src="https://discord.com/channels/1100751007878754374/1103610222263668837/1111432212051677237">
 <img width="1070" alt="Screenshot 2023-05-26 at 7 27 37 AM" src="https://github.com/louissiu198/ZEFOY/assets/130300063/099fcba5-bd37-43bc-ac42-0414d59618c3">
 
 
