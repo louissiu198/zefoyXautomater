@@ -16,6 +16,12 @@ https://discord.com/channels/1100751007878754374/1103610222263668837/11114322120
 <img width="1070" alt="Screenshot 2023-05-26 at 7 27 37 AM" src=<img width="972" alt="Screenshot 2023-05-26 at 7 38 39 AM" src="https://github.com/louissiu198/ZEFOY/assets/130300063/5777db65-5668-4360-8e96-addd43d6845f">
 "https://github.com/louissiu198/ZEFOY/assets/130300063/099fcba5-bd37-43bc-ac42-0414d59618c3">
 
+### Other ZEfoy SHIT Repo:
+https://github.com/xtekky/TikTok-ViewBot/blob/main/v2.py COPYING MY SOLVER EVEN WITH MY APIKEY (not working anymore)
+https://github.com/Fweak/zefoy-shit-view-bot-abuse-ew WHICH HAS BASE64 FOR ZEFOY RESPONSE WHICH IS NORMAL DUMBASS (didnt' try)
+https://github.com/sandrocods/Zefoy-Automation WHICH IS EVEN SELLING HIS OWN REQUESTS BASED VERSION (v4), and fucking shit BROWSER VERSION (paid, not working anymore)
+https://github.com/useragents/Zefoy-TikTok-Automator A SKID THAT ONLY CARES ABOUT (UI, not working anymore)
+
 
 louissiu#1998
 https://discord.gg/3uDhjyRgSw
