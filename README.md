@@ -6,7 +6,7 @@
 ## Reminder: No such updates if it patches, except you'r a developer that knows how to find XPATHS and fix the whole shit or requests endpoint to fix, they update once a month, and ask pando#0001 one month later lmafo
 
 ### People started to claim that the script was "HIS" now
-havent EVEN TRIED THIS BASE64 what is inside
+havent EVEN TRIED THIS BASE64 what is inside AT LINE 104 (WELCOME PEOPLES HELP ME CHECK)
 tf kid you know what
 i can do hashlib md5, wanna try or no dumbas fucking bitch
 ![image (1)](https://github.com/louissiu198/ZEFOY/assets/130300063/0d84faca-d5e1-4d4a-886c-8cc0d8912882)
