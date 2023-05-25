@@ -1,4 +1,4 @@
-# Zefoy
+# Zefoy (SECOND TIME I CLOSED THIS GITHUB ABOUT DAMN DUMBASS IN MY SERVER)
 # NOT PUBLIC, NOT FREE, NOT FOR SKIDS, NOT FOR DUMBASS
 # NO UPDATES, NO MONEY FOR UGUYS
 ## Likely people was claiming that my bot is a virus or has a logger in it in v4.py
