@@ -15,16 +15,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 
 PATHS = {
-    "captchaImage":"/html/body/div[5]/div[2]/form/div/div/img",
-    "captchaInput":"/html/body/div[5]/div[2]/form/div/div/div/input",
-    "captchaButton":"/html/body/div[5]/div[2]/form/div/div/div/div/button",
+    "captchaImage":"/html/body/div[3]/div[2]/form/div/div/img",
+    "captchaInput":"/html/body/div[3]/div[2]/form/div/div/div/input",
+    "captchaButton":"/html/body/div[3]/div[2]/form/div/div/div/div/button",
     "captchaCheck":"//*[@id='errorcapthcaclose']/div/div",
-    "viewsButton": "/html/body/div[6]/div/div[2]/div/div/div[5]/div/button",
-    "viewsInput":"/html/body/div[10]/div/form/div/input",
-    "viewsEnter":"/html/body/div[10]/div/form/div/div/button",
-    "viewsTimer":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrdG9V']/span",
-    "viewsExpire":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrdG9V']/div",
-    "viewsConfirm":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrdG9V']/div[1]/div/form/button",
+    "viewsButton": "/html/body/div[7]/div/div[2]/div/div/div[5]/div/button",
+    "viewsInput":"/html/body/div[9]/div/form/div/input",
+    "viewsEnter":"/html/body/div[6]/div/form/div/div/button",
+    "viewsTimer":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrdG8V']/span",
+    "viewsExpire":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrdG8V']/div",
+    "viewsConfirm":"//*[@id='c2VuZC9mb2xeb3dlcnNfdGlrd89V']/div[1]/div/form/button",
 }
 
 ICONS = """
