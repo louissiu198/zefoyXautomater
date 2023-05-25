@@ -20,4 +20,4 @@ https://discord.com/channels/1100751007878754374/1103610222263668837/11114322120
 louissiu#1998
 https://discord.gg/3uDhjyRgSw
 
-# Love U skids, dumbass, idians
+# Love U skids, dumbass, idians, cant code, kids, re-sellers
