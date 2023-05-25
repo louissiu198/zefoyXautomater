@@ -20,8 +20,11 @@ https://discord.com/channels/1100751007878754374/1103610222263668837/11114322120
 https://github.com/xtekky/TikTok-ViewBot/blob/main/v2.py COPYING MY SOLVER EVEN WITH MY APIKEY (not working anymore)
 https://github.com/Fweak/zefoy-shit-view-bot-abuse-ew WHICH HAS BASE64 FOR ZEFOY RESPONSE WHICH IS NORMAL DUMBASS (didnt' try)
 https://github.com/sandrocods/Zefoy-Automation WHICH IS EVEN SELLING HIS OWN REQUESTS BASED VERSION (v4), and fucking shit BROWSER VERSION (paid, not working anymore)
-https://github.com/useragents/Zefoy-TikTok-Automator A SKID THAT ONLY CARES ABOUT (UI, not working anymore)
 
+https://github.com/useragents/Zefoy-TikTok-Automator A SKID THAT ONLY CARES ABOUT (UI, not working anymore)
+https://github.com/Djuk1c/zefoy-froyz-bot A GUY WHO TURNED TO SELL UNPATCHED VIEWBOT (not working anymore)
+
+# AND u SEE CONCLUSION, im CLOSING AS WELL SO dont ask me why, look above....
 
 louissiu#1998
 https://discord.gg/3uDhjyRgSw
