@@ -4,7 +4,7 @@
 - Zefoy Request Bot + Zefame Request Bot
 - Account Generator for Zefame (could generate likes, views)
 - MultiThread for Zefoy (1000 views x thread) # its only working in req based, browser couldn't
-  Price or more info from : https://github.com/louissiu198/tikbotting
+  Price or more info from : https://github.com/louissiu198/tiktokbotting
   
 ### Features
 + Free, Easy to use
