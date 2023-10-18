@@ -1,3 +1,6 @@
+# New Version Request Based Paid , up high to 100 threads, no limits, dm louissiu discord to purchase
+
+# Proof of concept of request based
 import urllib.parse
 import requests
 import base64
