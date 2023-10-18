@@ -17,5 +17,5 @@
 2. Open CMD and then type 'pip install -r requirements.txt' and enter
 3. Type 'python main.py' and enter
 4. Follow instruction and enter link
-5. Enjoy using my automater and leave a star
+5. Enjoy using my automater and **leave a star**
    Would Now Constantly Update
