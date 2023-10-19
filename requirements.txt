@@ -1,5 +1,7 @@
-requests
+httpx
+pystyle
 selenium
-pillow
-io
-webdriver_manager
+threading
+selenium==4.11.02
+undetected-chromedriver==3.5.3
+
