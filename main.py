@@ -76,25 +76,12 @@ class ZefoyAutomater:
                 solved = False
     
     def image_recoginizer(self, image):
-        response = post(
-            "https://api.api-ninjas.com/v1/imagetotext",
-            files = {
-                "image": image
-            },
-            headers = {
-                # "Origin": "https://api-ninjas.com",
-                # "Referer": "https://api-ninjas.com/", Origin Referer = Bypasser without ApiKey
-                "X-Api-Key": "zvqy05NKzJMuouwKtewfPw==aEmBwzl8nD8s47QO" 
-            }
-        )
-        print(response.text)
-        try:
-            response = list(response.json())
-            response = dict(response[0])
-            return response["text"]
-        except:
-            self.image_recoginizer(image) 
-
+        resp = post(
+            f"https://platipus9999.pythonanywhere.com/", 
+            json = {'image': image}
+        ).text
+        # Plati credits to, im to lazy
+        return resp
     def transfer_textime(self, text):
         print(int(text.split("Please wait ")[1].split(" minute(s)")[0])*60+int(text.split("minute(s) ")[1].split(" seconds")[0]))
         return int(text.split("Please wait ")[1].split(" minute(s)")[0])*60+int(text.split("minute(s) ")[1].split(" seconds")[0])
