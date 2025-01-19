@@ -1,5 +1,5 @@
 # ZefoyXAutomater - Requests Based
-
+It is shit, zefoy is shit, I have my own viewbot sends directly towards the TikTok server
 ### Features
 + Free, Easy to use
 + Detects session expires
